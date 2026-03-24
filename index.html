@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fiduci Consulting | Engineering Recruitment, Career Intelligence &amp; Outplacement</title>
+<meta name="description" content="Fiduci Consulting provides engineering recruitment, career intelligence, and outplacement support services. Established 2014. Vancouver, BC.">
+<meta name="keywords" content="engineering recruitment, executive search, outplacement, career coaching, career intelligence, Vancouver, Canada">
+<meta name="author" content="Fiduci Consulting Inc.">
+<link rel="canonical" href="https://fiduci.consulting">
+<meta property="og:title" content="Fiduci Consulting | Engineering Recruitment, Career Intelligence & Outplacement">
+<meta property="og:description" content="Engineering recruitment, career intelligence, and outplacement support. Established 2014. Vancouver, BC.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://fiduci.consulting">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0a1628;--navy-mid:#0d1b30;--navy-light:#132240;--gold:#d4a853;--gold-hover:#e0b96a;--gold-dim:rgba(212,168,83,0.12);--white:#fff;--off-white:#f7f8fa;--text:#b8c4d4;--text-bright:#dce2ea;--text-dark:#2a2a3a;--text-mid:#555;--border-light:rgba(255,255,255,0.06);--border-gold:rgba(212,168,83,0.18)}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--navy);color:var(--text);line-height:1.75;-webkit-font-smoothing:antialiased;font-size:18px}
+h1,h2,h3,h4{font-family:'DM Serif Display',Georgia,serif;line-height:1.15}
+img{max-width:100%;display:block}
+.wrap{max-width:1480px;margin:0 auto;padding:0 40px}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(10,22,40,0.92);backdrop-filter:blur(24px);border-bottom:1px solid rgba(212,168,83,0.08);height:80px;display:flex;align-items:center}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;width:100%;gap:48px}
+.nav-brand{display:flex;align-items:center;gap:14px;text-decoration:none;flex-shrink:0}
+.nav-logo{font-family:'DM Serif Display',serif;color:var(--gold);font-size:32px}
+.nav-est{font-size:12px;color:rgba(200,208,220,0.4);letter-spacing:2px;text-transform:uppercase;font-weight:600}
+.nav-links{display:flex;align-items:center;gap:36px}
+.nav-links a{color:var(--text-bright);text-decoration:none;font-size:16px;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{background:var(--gold);color:#000;padding:12px 32px;border-radius:8px;text-decoration:none;font-weight:700;font-size:15px;transition:all .3s;border:2px solid var(--gold)}
+.nav-cta:hover{background:transparent;color:var(--gold)}
+
+/* HERO */
+.hero{padding:200px 0 120px;background:linear-gradient(165deg,var(--navy),var(--navy-mid) 50%,var(--navy-light));position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-150px;right:-150px;width:800px;height:800px;background:radial-gradient(circle,rgba(212,168,83,0.06),transparent 65%);border-radius:50%}
+.hero-content{position:relative;z-index:1;max-width:820px}
+.hero-tag{display:inline-flex;align-items:center;gap:10px;padding:8px 20px;border:1px solid var(--border-gold);border-radius:100px;font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:32px}
+.hero-tag::before{content:'';width:7px;height:7px;background:var(--gold);border-radius:50%}
+.hero h1{font-size:clamp(44px,5vw,68px);color:var(--white);margin-bottom:28px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero .sub{font-size:21px;color:var(--text-bright);margin-bottom:44px;line-height:1.8;font-weight:300;max-width:680px}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:56px}
+.btn-gold{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:#000;padding:16px 40px;border-radius:8px;text-decoration:none;font-weight:700;font-size:17px;transition:all .3s}
+.btn-gold:hover{background:var(--gold-hover);transform:translateY(-2px);box-shadow:0 12px 40px rgba(212,168,83,0.3)}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;border:2px solid rgba(212,168,83,0.3);color:var(--gold);padding:14px 40px;border-radius:8px;text-decoration:none;font-weight:600;font-size:17px;transition:all .3s}
+.btn-outline:hover{border-color:var(--gold);background:rgba(212,168,83,0.08)}
+.hero-stats{display:flex;gap:56px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.06)}
+.hero-stat .num{font-family:'DM Serif Display',serif;font-size:44px;color:var(--gold)}
+.hero-stat .label{font-size:14px;color:var(--text);margin-top:4px}
+
+/* SECTIONS */
+section{padding:100px 0}
+.s-light{background:var(--white);color:var(--text-dark)}
+.s-dark{background:var(--navy);color:var(--text)}
+.s-alt{background:var(--off-white);color:var(--text-dark)}
+.s-navy-mid{background:var(--navy-mid);color:var(--text)}
+.section-tag{display:inline-flex;align-items:center;gap:8px;padding:8px 20px;border:2px solid var(--border-gold);border-radius:100px;font-size:15px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:24px}
+.s-light .section-tag,.s-alt .section-tag{border-color:var(--navy);color:var(--navy)}
+section h2{font-size:clamp(36px,4vw,56px);margin-bottom:20px}
+section h2 em{font-style:normal;color:var(--gold)}
+.s-light h2,.s-alt h2{color:var(--navy)}
+.s-dark h2,.s-navy-mid h2{color:var(--white)}
+section .lead{font-size:20px;max-width:720px;margin-bottom:56px;line-height:1.8;font-weight:300}
+.s-light .lead,.s-alt .lead{color:var(--text-mid)}
+.s-dark .lead,.s-navy-mid .lead{color:var(--text)}
+
+/* SERVICES */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.service-card{padding:48px 40px;border-radius:18px;transition:all .3s;position:relative}
+.s-light .service-card{background:var(--off-white);border:2px solid #eee}
+.service-card:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 20px 60px rgba(0,0,0,0.06)}
+.service-card .card-tag{display:inline-block;padding:4px 12px;border-radius:6px;font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px}
+.service-card .card-tag.recruit{background:rgba(60,179,113,0.1);color:#2a8}
+.service-card .card-tag.outplace{background:rgba(212,168,83,0.12);color:#b8922e}
+.service-card .card-tag.coach{background:rgba(100,140,200,0.12);color:#4a7ab5}
+.service-card h3{font-size:28px;color:var(--navy);margin-bottom:14px}
+.service-card p{font-size:17px;color:var(--text-mid);line-height:1.75;margin-bottom:20px}
+.service-card ul{list-style:none;margin-bottom:24px}
+.service-card li{font-size:16px;color:var(--text-mid);padding:6px 0;padding-left:24px;position:relative}
+.service-card li::before{content:'\2713';position:absolute;left:0;color:var(--gold);font-weight:700}
+.service-link{color:var(--gold);text-decoration:none;font-weight:700;font-size:16px;display:inline-flex;align-items:center;gap:6px}
+.service-link:hover{text-decoration:underline}
+
+/* VALUES */
+.values-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.value-card{padding:40px 32px;border-radius:16px;background:var(--navy-light);border:1px solid var(--border-light);text-align:center;transition:all .3s}
+.value-card:hover{border-color:var(--border-gold);transform:translateY(-4px)}
+.value-icon{width:80px;height:80px;border-radius:20px;background:var(--gold);display:flex;align-items:center;justify-content:center;margin:0 auto 24px;box-shadow:0 8px 32px rgba(212,168,83,0.25)}
+.value-icon svg{width:40px;height:40px}
+
+/* IMAGE BANDS */
+.img-band{padding:0;overflow:hidden}
+.img-band-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;min-height:420px;max-height:480px;overflow:hidden}
+.img-band-text{padding:80px 64px;display:flex;flex-direction:column;justify-content:center}
+.img-band-text h3{font-size:34px;color:var(--white);margin-bottom:16px}
+.img-band-text p{font-size:19px;color:var(--text);line-height:1.75}
+.img-band-photo{min-height:420px;max-height:480px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:var(--navy-light)}
+.img-band-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.value-card h4{font-size:22px;color:var(--white);margin-bottom:10px}
+.value-card p{font-size:16px;color:var(--text);line-height:1.7}
+
+/* TESTIMONIALS */
+.test-section-label{font-size:14px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:24px;margin-top:48px}
+.test-section-label:first-of-type{margin-top:0}
+.testimonials-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
+.test-card{padding:44px;border-radius:18px;border:1px solid #e8e8e8;background:var(--white);position:relative}
+.test-card::before{content:'\201C';font-family:'DM Serif Display',serif;font-size:80px;color:rgba(212,168,83,0.15);position:absolute;top:16px;left:32px;line-height:1}
+.test-card blockquote{font-size:18px;color:var(--text-dark);line-height:1.8;font-style:italic;margin-bottom:24px;position:relative;z-index:1}
+.test-card .author{font-size:15px;font-weight:700;color:var(--navy)}
+.test-card .role{font-size:14px;color:var(--text-mid);margin-top:2px}
+
+/* SECTORS */
+.sectors-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:40px}
+.sector-pill{padding:10px 24px;border-radius:100px;border:1px solid var(--border-gold);font-size:15px;font-weight:500;color:var(--text-bright)}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about-text p{font-size:18px;color:var(--text);line-height:1.8;margin-bottom:16px}
+.about-highlight{padding:32px;border-radius:16px;border:1px solid var(--border-gold);background:var(--gold-dim)}
+.about-highlight p{font-size:17px;color:var(--text-bright);line-height:1.7}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.contact-text h2{color:var(--white);font-size:clamp(36px,4vw,52px);margin-bottom:20px}
+.contact-text h2 em{font-style:normal;color:var(--gold)}
+.contact-text p{font-size:18px;color:var(--text);line-height:1.8;margin-bottom:20px}
+.contact-details{margin-top:32px}
+.contact-details div{margin-bottom:14px;font-size:17px}
+.contact-details strong{color:var(--gold)}
+.contact-details a{color:var(--text-bright);text-decoration:none}
+.contact-details a:hover{color:var(--gold)}
+.contact-card{background:var(--navy-light);border:1px solid var(--border-light);border-radius:24px;padding:52px;text-align:center}
+.contact-card h3{color:var(--white);font-size:32px;margin-bottom:16px}
+.contact-card p{font-size:17px;color:var(--text);margin-bottom:32px}
+.contact-card .btn-gold{font-size:18px;padding:18px 48px}
+.contact-card .phone-link{display:block;margin-top:20px;font-size:18px;font-weight:700}
+.contact-card .phone-link a{color:var(--gold);text-decoration:none}
+
+/* FOOTER */
+footer{background:var(--navy-mid);padding:48px 0;border-top:1px solid rgba(255,255,255,0.08)}
+.footer-inner{display:flex;justify-content:space-between;align-items:center}
+.footer-left{font-size:14px;color:rgba(220,226,234,0.6)}
+.footer-right{display:flex;gap:24px}
+.footer-right a{color:rgba(220,226,234,0.6);text-decoration:none;font-size:14px;transition:color .2s}
+.footer-right a:hover{color:var(--gold)}
+
+/* RESPONSIVE */
+@media(max-width:1024px){.services-grid{grid-template-columns:1fr}.values-grid{grid-template-columns:repeat(2,1fr)}.testimonials-grid{grid-template-columns:1fr}.about-grid,.contact-grid{grid-template-columns:1fr}.hero-stats{flex-direction:column;gap:24px}.img-band-grid{grid-template-columns:1fr;max-height:none}.img-band-photo{min-height:280px;max-height:360px}}
+@media(max-width:768px){.wrap{padding:0 20px}.values-grid{grid-template-columns:1fr}.nav-links{display:none}.hero{padding:140px 0 80px}.hero h1{font-size:38px}.hero-ctas{flex-direction:column}.footer-inner{flex-direction:column;gap:16px;text-align:center}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.hero h1{animation:fadeUp .8s ease forwards}
+.hero .sub{animation:fadeUp .8s .15s ease forwards;opacity:0}
+.hero-ctas{animation:fadeUp .8s .3s ease forwards;opacity:0}
+.hero-stats{animation:fadeUp .8s .45s ease forwards;opacity:0}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap"><div class="nav-inner">
+<a href="#" class="nav-brand"><span class="nav-logo">Fiduci</span><span class="nav-est">Est. 2014</span></a>
+<div class="nav-links"><a href="#services">Services</a><a href="#values">Values</a><a href="#testimonials">Testimonials</a><a href="#about">About</a><a href="#contact" class="nav-cta">Get in Touch</a></div>
+</div></div></nav>
+
+<!-- HERO -->
+<section class="hero"><div class="wrap"><div class="hero-content">
+<div class="hero-tag">Engineering Recruitment &bull; Career Intelligence &bull; Outplacement</div>
+<h1>We find exceptional talent.<br>We build exceptional <em>careers.</em></h1>
+<p class="sub">Fiduci Consulting partners with forward-thinking organizations to recruit high-calibre engineering and technology talent, and supports professionals through career transitions with AI-powered intelligence no other firm offers.</p>
+<div class="hero-ctas"><a href="#services" class="btn-gold">Our Services &darr;</a><a href="#contact" class="btn-outline">Get in Touch</a></div>
+<div class="hero-stats">
+<div class="hero-stat"><div class="num">11+</div><div class="label">Years in Practice</div></div>
+<div class="hero-stat"><div class="num">500+</div><div class="label">Professionals Supported</div></div>
+<div class="hero-stat"><div class="num">12+</div><div class="label">Industries Served</div></div>
+</div>
+</div></div></section>
+
+<!-- SERVICES -->
+<section class="s-light" id="services"><div class="wrap">
+<div style="text-align:center;margin-bottom:56px">
+<div class="section-tag">What We Do</div>
+<h2>Three practices. <em>One firm.</em></h2>
+</div>
+<div class="services-grid">
+<div class="service-card">
+<div class="card-tag recruit">Recruitment</div>
+<h3>Engineering Recruitment &amp; Executive Search</h3>
+<p>We identify, assess, and place high-calibre engineering and technology talent. Our search methodology goes beyond resume matching to evaluate strategic fit, leadership potential, and long-term value.</p>
+<ul><li>IC design, semiconductor, hardware engineering</li><li>Software engineering and data science</li><li>Engineering leadership and executive roles</li><li>Direct hire, retained search, and contingency</li></ul>
+<a href="#contact" class="service-link">Discuss a search &rarr;</a>
+</div>
+<div class="service-card">
+<div class="card-tag outplace">Outplacement</div>
+<h3>Outplacement Support &amp; Career Intelligence</h3>
+<p>Our enterprise outplacement offering, the Iceberg Profile, surfaces the 80&ndash;90% of professional value that resumes miss. Deployed in 48 hours at 40&ndash;70% less than traditional providers.</p>
+<ul><li>Personalized career intelligence for each employee</li><li>AI Resilience Audit and career pathway mapping</li><li>Workforce Transition Reports for leadership</li><li>Direct placement through our recruitment network</li></ul>
+<a href="https://enterprise.icebergprofile.com" class="service-link">Learn more at Iceberg Profile Enterprise &rarr;</a>
+</div>
+<div class="service-card">
+<div class="card-tag coach">Career Coaching</div>
+<h3>Career &amp; Leadership Coaching</h3>
+<p>For individual professionals who want to operate above their current level. We work with mid-career engineers and technical leaders to surface their hidden strategic value and architect their next move.</p>
+<ul><li>Strategic career repositioning</li><li>Leadership presence and executive communication</li><li>Interview strategy and offer negotiation</li><li>AI resilience and future-proofing</li></ul>
+<a href="#contact" class="service-link">Get in touch &rarr;</a>
+</div>
+</div>
+</div></section>
+
+<!-- IMAGE 1: Partnership -->
+<div class="img-band" style="background:var(--navy)">
+<div class="img-band-grid">
+<div class="img-band-photo">
+<img src="/Image-01.jpg" alt="Two professionals collaborating on a project" style="width:100%;height:100%;object-fit:contain">
+</div>
+<div class="img-band-text">
+<h3>Your search partner, not just your vendor.</h3>
+<p>We invest the time to understand your technology, your culture, and the qualities that make someone thrive in your organization. That depth is why our placements last and why clients come back year after year.</p>
+</div>
+</div>
+</div>
+
+<!-- VALUES -->
+<section class="s-dark" id="values"><div class="wrap">
+<div style="text-align:center;margin-bottom:56px">
+<div class="section-tag">How We Work</div>
+<h2>The principles behind <em>everything we do.</em></h2>
+</div>
+<div class="values-grid">
+<div class="value-card">
+<div class="value-icon"><svg viewBox="0 0 40 40" fill="none"><path d="M20 6L30 16L20 34L10 16L20 6Z" fill="#0a1628" opacity="0.9"/><path d="M10 16H30" stroke="#0a1628" stroke-width="2"/><path d="M15 6L12 16L20 34" stroke="#0a1628" stroke-width="1.2" opacity="0.5"/><path d="M25 6L28 16L20 34" stroke="#0a1628" stroke-width="1.2" opacity="0.5"/></svg></div>
+<h4>Quality</h4>
+<p>Rigorous screening, deep technical understanding, and candidates who meet the bar &mdash; not just fill the seat.</p>
+</div>
+<div class="value-card">
+<div class="value-icon"><svg viewBox="0 0 40 40" fill="none"><path d="M20 5L8 11v9c0 8.5 5 14 12 16.5 7-2.5 12-8 12-16.5v-9L20 5z" fill="#0a1628" opacity="0.9"/><path d="M14 20l4 4 8-9" stroke="#d4a853" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<h4>Integrity</h4>
+<p>Every interaction conducted with transparency, honesty, and ethical practice. No shortcuts, no exceptions.</p>
+</div>
+<div class="value-card">
+<div class="value-icon"><svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="14" fill="#0a1628" opacity="0.9"/><path d="M12 22c2-3 4-4 7-4 2 0 3 1 4 1s2-1 4-1l2 1" stroke="#d4a853" stroke-width="2.5" stroke-linecap="round"/><path d="M11 18h4l3 3" stroke="#d4a853" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M29 18h-4l-3 3" stroke="#d4a853" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<h4>Trust</h4>
+<p>Clients and candidates entrust us to represent them accurately. We take that responsibility seriously and honour it consistently.</p>
+</div>
+<div class="value-card">
+<div class="value-icon"><svg viewBox="0 0 40 40" fill="none"><rect x="10" y="18" width="20" height="15" rx="3" fill="#0a1628" opacity="0.9"/><path d="M14 18v-5a6 6 0 0112 0v5" stroke="#0a1628" stroke-width="3" stroke-linecap="round"/><circle cx="20" cy="26" r="2.5" fill="#d4a853"/><path d="M20 28.5V31" stroke="#d4a853" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+<h4>Confidentiality</h4>
+<p>All information is held in strict confidence unless authorized otherwise. Discretion is fundamental to how we operate.</p>
+</div>
+</div>
+</div></section>
+
+<!-- SECTORS -->
+<section class="s-navy-mid"><div class="wrap">
+<div style="text-align:center">
+<div class="section-tag">Sectors</div>
+<h2>Industries we <em>know well.</em></h2>
+<p class="lead" style="margin-left:auto;margin-right:auto">Our recruitment and career intelligence work spans organizations across technology, engineering, and the broader knowledge economy.</p>
+<div class="sectors-row" style="justify-content:center">
+<div class="sector-pill">Semiconductor &amp; IC Design</div>
+<div class="sector-pill">Software &amp; SaaS</div>
+<div class="sector-pill">Hardware Engineering</div>
+<div class="sector-pill">Data Science &amp; AI</div>
+<div class="sector-pill">Clean Technology</div>
+<div class="sector-pill">Advanced Manufacturing</div>
+<div class="sector-pill">Medical Devices &amp; Imaging</div>
+<div class="sector-pill">Telecommunications</div>
+<div class="sector-pill">Mining &amp; Resources</div>
+<div class="sector-pill">Indigenous Services</div>
+<div class="sector-pill">Government &amp; Public Sector</div>
+<div class="sector-pill">Education &amp; Research</div>
+</div>
+</div>
+</div></section>
+
+<!-- IMAGE 2: Diverse team -->
+<div class="img-band" style="background:var(--navy-mid)">
+<div class="img-band-grid">
+<div class="img-band-text">
+<h3>The people behind your next breakthrough are out there. We find them.</h3>
+<p>Great companies are built by great people. Our network spans thousands of technical professionals across North America &mdash; engineers, data scientists, architects, and leaders who are not actively looking but would move for the right opportunity.</p>
+</div>
+<div class="img-band-photo">
+<img src="/Image-02.jpg" alt="Engineering professionals collaborating in a technical meeting" style="width:100%;height:100%;object-fit:contain">
+</div>
+</div>
+</div>
+
+<!-- TESTIMONIALS -->
+<section class="s-alt" id="testimonials"><div class="wrap">
+<div style="text-align:center;margin-bottom:56px">
+<div class="section-tag">Testimonials</div>
+<h2>What clients and candidates <em>say.</em></h2>
+</div>
+
+<div class="test-section-label">From Clients</div>
+<div class="testimonials-grid">
+<div class="test-card">
+<blockquote>Kirthi has supported us for a number of quality hires as we have grown Redlen Technologies from 60 to 140 employees over the last 5 years. During that time Kirthi has taken the time to get to know our company, our culture, our technology, and the various roles that we have needed to fill. We have been very pleased with the many excellent candidates that Kirthi has identified and helped join Redlen. I highly recommend Kirthi Roberts' services and Fiduci Consulting.</blockquote>
+<div class="author">Jim Balcom</div>
+<div class="role">COO, Redlen Technologies (Canon Inc.)</div>
+</div>
+<div class="test-card">
+<blockquote>Kirthi is a solid recruiting professional who takes the time to understand client needs and works diligently to find the best possible candidate. He has developed a great network, full of talent who trust and respect him. For anyone looking for a recruiting partner to help source the best available talent in a competitive market, I cannot recommend Kirthi highly enough.</blockquote>
+<div class="author">Ashish Anand</div>
+<div class="role">Founder &amp; CEO, Workforce Wellness (formerly COO, Bazinga Technologies)</div>
+</div>
+<div class="test-card">
+<blockquote>Kirthi takes a strong interest in understanding and incorporating the technical requirements of the position and the cultural requirements of the organization into the search process. He is highly transparent and easy to work with. We continue to work with Kirthi and Fiduci Consulting.</blockquote>
+<div class="author">Georgina Havelka</div>
+<div class="role">Senior Director, Development, Electronic Arts</div>
+</div>
+<div class="test-card">
+<blockquote>Kirthi Roberts is persistent in his search for the ideal candidate. He is well connected, and listens closely to the needs of the organization.</blockquote>
+<div class="author">Ginger Gibson, PhD</div>
+<div class="role">Founding Director, The Firelight Group</div>
+</div>
+</div>
+
+<div class="test-section-label">From Candidates</div>
+<div class="testimonials-grid">
+<div class="test-card">
+<blockquote>I had the pleasure to interface with Kirthi on an assignment for Executive Search. Kirthi is a bright scientific scholar with strong people skills and a keen eye for talent, which is a rare combination in the Executive Search world. This creates a unique blend of depth, commitment, and professionalism that I am glad to recommend here.</blockquote>
+<div class="author">Christian Olivier, PhD, MBA</div>
+<div class="role">Vice President &amp; General Manager (formerly VP, Worldwide Sales, Alcatel &bull; GM, Broadband Division, ST Microelectronics)</div>
+</div>
+<div class="test-card">
+<blockquote>Working with Kirthi was an excellent experience from the first interaction. He created a sense of honesty, professionalism and attention to detail that allowed me to understand a unique opportunity in my career path. Unlike most interactions with Executive Search professionals, Kirthi created a clear path in the transition process all the way through my joining a new team.</blockquote>
+<div class="author">Andy Kozma</div>
+<div class="role">Executive Vice President, Scope Media</div>
+</div>
+<div class="test-card">
+<blockquote>Kirthi's approach to recruitment was characterized by meticulous attention to detail. His strategic guidance on how to tailor my application materials and present myself during interviews significantly contributed to my success. Throughout the process, Kirthi was a coach, mentor, and reliable source of advice. I strongly recommend Kirthi as a professional without hesitation.</blockquote>
+<div class="author">Diego Barros Delgado</div>
+<div class="role">Director of Software Quality Assurance, Circle Cardiovascular Imaging</div>
+</div>
+</div>
+</div></section>
+
+<!-- ABOUT -->
+<section class="s-dark" id="about"><div class="wrap">
+<div class="about-grid">
+<div class="about-text">
+<div class="section-tag">About</div>
+<h2>Built on <em>experience.</em></h2>
+<p>Fiduci Consulting was founded in 2014 by Kirthi Roberts, PhD, P.Eng. &mdash; a licensed professional engineer with over 25 years of experience across multiple industries.</p>
+<p>What began as an engineering recruitment practice has grown into a firm that serves organizations and professionals across three interconnected disciplines: finding exceptional talent, supporting workforce transitions, and coaching technical leaders to operate at the highest level.</p>
+<p>Based in Vancouver, BC, Fiduci works with clients across Canada and the United States.</p>
+</div>
+<div>
+<div class="about-highlight">
+<p><strong style="color:var(--gold)">The Fiduci difference:</strong> We are the only firm that combines deep technical recruitment expertise with AI-powered career intelligence and an active placement network. When we help your people transition out, we also help them land.</p>
+</div>
+</div>
+</div>
+</div></section>
+
+<!-- IMAGE 3: Career success -->
+<div class="img-band" style="background:var(--navy)">
+<div class="img-band-grid">
+<div class="img-band-photo">
+<img src="/Image-03.jpg" alt="Confident professional moving forward in career" style="width:100%;height:100%;object-fit:contain">
+</div>
+<div class="img-band-text">
+<h3>Careers are built on decisions, not just qualifications.</h3>
+<p>The right role at the right time changes everything. Whether you are hiring or being hired, Fiduci ensures both sides of the equation are aligned for long-term success.</p>
+</div>
+</div>
+</div>
+
+<!-- CONTACT -->
+<section class="s-navy-mid" id="contact"><div class="wrap">
+<div class="contact-grid">
+<div class="contact-text">
+<div class="section-tag">Contact</div>
+<h2>Let's <em>talk.</em></h2>
+<p>Whether you need to fill a critical engineering role, support departing employees through a transition, or invest in your technical leaders &mdash; we are here to help.</p>
+<div class="contact-details">
+<div><strong>Email:</strong> <a href="#" id="contactEmail1"></a></div>
+<div><strong>Phone:</strong> <a href="tel:+16044467215">+1 604.446.7215</a></div>
+<div><strong>Location:</strong> Vancouver, BC, Canada</div>
+</div>
+</div>
+<div class="contact-card">
+<h3>Ready to start?</h3>
+<p>Tell us what you need and we will get back to you within one business day.</p>
+<a href="#" id="contactEmailBtn" class="btn-gold">Email Us &rarr;</a>
+<div class="phone-link"><a href="tel:+16044467215">+1 604.446.7215</a></div>
+</div>
+</div>
+</div></section>
+
+<footer><div class="wrap"><div class="footer-inner">
+<div class="footer-left">&copy; 2026 Fiduci Consulting Inc. &bull; Established 2014 &bull; Vancouver, BC, Canada</div>
+<div class="footer-right">
+<a href="https://enterprise.icebergprofile.com">Iceberg Profile Enterprise</a>
+<a href="https://www.linkedin.com/company/fiduci-consulting">LinkedIn</a>
+</div>
+</div></div></footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+  a.addEventListener('click',function(e){
+    if(a.getAttribute('href')==='#') return;
+    e.preventDefault();
+    var t=document.querySelector(a.getAttribute('href'));
+    if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+  });
+});
+// Construct email
+var em=['contact','fiduciconsulting','com'].join('.');
+em=em.replace('contact.','contact@');
+var el1=document.getElementById('contactEmail1');
+if(el1){el1.href='mai'+'lto:'+em;el1.textContent=em;}
+var el2=document.getElementById('contactEmailBtn');
+if(el2){el2.href='mai'+'lto:'+em;}
+</script>
+</body>
+</html>
