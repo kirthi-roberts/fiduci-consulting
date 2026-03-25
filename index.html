@@ -39,14 +39,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(10,22,40,0.9
 .hero{padding:200px 0 120px;background:linear-gradient(165deg,var(--navy),var(--navy-mid) 50%,var(--navy-light));position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;top:-150px;right:-150px;width:800px;height:800px;background:radial-gradient(circle,rgba(212,168,83,0.06),transparent 65%);border-radius:50%}
 .hero-content{position:relative;z-index:1}
-.hero-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:center}
-.hero-img{border-radius:20px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,0.3)}
+.hero-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:40px;align-items:stretch;min-height:500px}
+.hero-img{border-radius:20px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,0.3);display:flex}
 .hero-img img{width:100%;height:100%;object-fit:cover;display:block}
 .hero-tag{display:inline-flex;align-items:center;gap:10px;padding:8px 20px;border:1px solid var(--border-gold);border-radius:100px;font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:32px}
 .hero-tag::before{content:'';width:7px;height:7px;background:var(--gold);border-radius:50%}
 .hero h1{font-size:clamp(44px,5vw,68px);color:var(--white);margin-bottom:28px}
 .hero h1 em{font-style:normal;color:var(--gold)}
-.hero .sub{font-size:21px;color:var(--text-bright);margin-bottom:44px;line-height:1.8;font-weight:300;max-width:680px}
+.hero .sub{font-size:21px;color:var(--text-bright);margin-bottom:44px;line-height:1.8;font-weight:300;max-width:580px}
 .hero-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:56px}
 .btn-gold{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:#000;padding:16px 40px;border-radius:8px;text-decoration:none;font-weight:700;font-size:17px;transition:all .3s}
 .btn-gold:hover{background:var(--gold-hover);transform:translateY(-2px);box-shadow:0 12px 40px rgba(212,168,83,0.3)}
@@ -171,7 +171,7 @@ footer{background:var(--navy-mid);padding:48px 0;border-top:1px solid rgba(255,2
 <div class="hero-grid">
 <div>
 <div class="hero-tag">Engineering Recruitment &bull; Career Intelligence &bull; Outplacement</div>
-<h1>We find exceptional talent.<br>We build exceptional <em>careers.</em></h1>
+<h1>We find exceptional&nbsp;talent.<br>We build exceptional&nbsp;<em>careers.</em></h1>
 <p class="sub">Fiduci Consulting partners with forward-thinking organizations to recruit high-calibre engineering and technology talent, and supports professionals through career transitions with AI-powered intelligence no other firm offers.</p>
 <div class="hero-ctas"><a href="#services" class="btn-gold">Our Services &darr;</a><a href="#contact" class="btn-outline">Get in Touch</a></div>
 <div class="hero-stats">
