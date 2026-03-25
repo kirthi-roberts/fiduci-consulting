@@ -107,12 +107,19 @@ section .lead{font-size:20px;max-width:720px;margin-bottom:56px;line-height:1.8;
 /* TESTIMONIALS */
 .test-section-label{font-size:14px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:24px;margin-top:48px}
 .test-section-label:first-of-type{margin-top:0}
-.testimonials-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
-.test-card{padding:44px;border-radius:18px;border:1px solid #e8e8e8;background:var(--white);position:relative}
-.test-card::before{content:'\201C';font-family:'DM Serif Display',serif;font-size:80px;color:rgba(212,168,83,0.15);position:absolute;top:16px;left:32px;line-height:1}
-.test-card blockquote{font-size:18px;color:var(--text-dark);line-height:1.8;font-style:italic;margin-bottom:24px;position:relative;z-index:1}
-.test-card .author{font-size:15px;font-weight:700;color:var(--navy)}
-.test-card .role{font-size:14px;color:var(--text-mid);margin-top:2px}
+.test-slider{position:relative;max-width:900px}
+.test-slide{display:none;padding:48px;border-radius:18px;border:1px solid #e8e8e8;background:var(--white);position:relative;min-height:200px}
+.test-slide.active{display:block}
+.test-slide::before{content:'\201C';font-family:'DM Serif Display',serif;font-size:80px;color:rgba(212,168,83,0.15);position:absolute;top:16px;left:32px;line-height:1}
+.test-slide blockquote{font-size:18px;color:var(--text-dark);line-height:1.8;font-style:italic;margin-bottom:24px;position:relative;z-index:1}
+.test-slide .author{font-size:15px;font-weight:700;color:var(--navy)}
+.test-slide .role{font-size:14px;color:var(--text-mid);margin-top:2px}
+.test-nav{display:flex;gap:12px;margin-top:20px;align-items:center}
+.test-nav button{background:rgba(0,0,0,0.06);border:1px solid #ddd;color:var(--navy);width:44px;height:44px;border-radius:50%;cursor:pointer;font-size:20px;transition:all .2s}
+.test-nav button:hover{background:var(--gold);color:#000;border-color:var(--gold)}
+.test-dots{display:flex;gap:8px;margin-left:16px}
+.test-dot{width:10px;height:10px;border-radius:50%;background:#ddd;cursor:pointer;transition:background .3s}
+.test-dot.active{background:var(--gold)}
 
 /* SECTORS */
 .sectors-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:40px}
@@ -125,21 +132,12 @@ section .lead{font-size:20px;max-width:720px;margin-bottom:56px;line-height:1.8;
 .about-highlight p{font-size:17px;color:var(--text-bright);line-height:1.7}
 
 /* CONTACT */
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
-.contact-text h2{color:var(--white);font-size:clamp(36px,4vw,52px);margin-bottom:20px}
-.contact-text h2 em{font-style:normal;color:var(--gold)}
-.contact-text p{font-size:18px;color:var(--text);line-height:1.8;margin-bottom:20px}
-.contact-details{margin-top:32px}
-.contact-details div{margin-bottom:14px;font-size:17px}
-.contact-details strong{color:var(--gold)}
-.contact-details a{color:var(--text-bright);text-decoration:none}
-.contact-details a:hover{color:var(--gold)}
-.contact-card{background:var(--navy-light);border:1px solid var(--border-light);border-radius:24px;padding:52px;text-align:center}
-.contact-card h3{color:var(--white);font-size:32px;margin-bottom:16px}
-.contact-card p{font-size:17px;color:var(--text);margin-bottom:32px}
-.contact-card .btn-gold{font-size:18px;padding:18px 48px}
-.contact-card .phone-link{display:block;margin-top:20px;font-size:18px;font-weight:700}
-.contact-card .phone-link a{color:var(--gold);text-decoration:none}
+.contact-section-inner{max-width:700px;margin:0 auto;text-align:center}
+.contact-section-inner h2{color:var(--white);font-size:clamp(36px,4vw,52px);margin-bottom:20px}
+.contact-section-inner h2 em{font-style:normal;color:var(--gold)}
+.contact-section-inner>p{font-size:18px;color:var(--text);line-height:1.8;margin-bottom:36px}
+.contact-section-inner .btn-gold{font-size:18px;padding:20px 56px}
+.contact-subtle{margin-top:28px;font-size:15px;color:rgba(200,208,220,0.45)}
 
 /* FOOTER */
 footer{background:var(--navy-mid);padding:48px 0;border-top:1px solid rgba(255,255,255,0.08)}
@@ -150,7 +148,7 @@ footer{background:var(--navy-mid);padding:48px 0;border-top:1px solid rgba(255,2
 .footer-right a:hover{color:var(--gold)}
 
 /* RESPONSIVE */
-@media(max-width:1024px){.services-grid{grid-template-columns:1fr}.values-grid{grid-template-columns:repeat(2,1fr)}.testimonials-grid{grid-template-columns:1fr}.about-grid,.contact-grid{grid-template-columns:1fr}.hero-stats{flex-direction:column;gap:24px}.img-band-grid{grid-template-columns:1fr;max-height:none}.img-band-photo{min-height:280px;max-height:360px}}
+@media(max-width:1024px){.services-grid{grid-template-columns:1fr}.values-grid{grid-template-columns:repeat(2,1fr)}.about-grid{grid-template-columns:1fr}.hero-stats{flex-direction:column;gap:24px}.img-band-grid{grid-template-columns:1fr;max-height:none}.img-band-photo{min-height:280px;max-height:360px}}
 @media(max-width:768px){.wrap{padding:0 20px}.values-grid{grid-template-columns:1fr}.nav-links{display:none}.hero{padding:140px 0 80px}.hero h1{font-size:38px}.hero-ctas{flex-direction:column}.footer-inner{flex-direction:column;gap:16px;text-align:center}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
 .hero h1{animation:fadeUp .8s ease forwards}
@@ -297,46 +295,53 @@ footer{background:var(--navy-mid);padding:48px 0;border-top:1px solid rgba(255,2
 </div>
 
 <div class="test-section-label">From Clients</div>
-<div class="testimonials-grid">
-<div class="test-card">
+<div class="test-slider" id="clientSlider">
+<div class="test-slide active">
 <blockquote>Kirthi has supported us for a number of quality hires as we have grown Redlen Technologies from 60 to 140 employees over the last 5 years. During that time Kirthi has taken the time to get to know our company, our culture, our technology, and the various roles that we have needed to fill. We have been very pleased with the many excellent candidates that Kirthi has identified and helped join Redlen. I highly recommend Kirthi Roberts' services and Fiduci Consulting.</blockquote>
 <div class="author">Jim Balcom</div>
 <div class="role">COO, Redlen Technologies (Canon Inc.)</div>
 </div>
-<div class="test-card">
+<div class="test-slide">
 <blockquote>Kirthi is a solid recruiting professional who takes the time to understand client needs and works diligently to find the best possible candidate. He has developed a great network, full of talent who trust and respect him. For anyone looking for a recruiting partner to help source the best available talent in a competitive market, I cannot recommend Kirthi highly enough.</blockquote>
 <div class="author">Ashish Anand</div>
 <div class="role">Founder &amp; CEO, Workforce Wellness (formerly COO, Bazinga Technologies)</div>
 </div>
-<div class="test-card">
+<div class="test-slide">
 <blockquote>Kirthi takes a strong interest in understanding and incorporating the technical requirements of the position and the cultural requirements of the organization into the search process. He is highly transparent and easy to work with. We continue to work with Kirthi and Fiduci Consulting.</blockquote>
 <div class="author">Georgina Havelka</div>
 <div class="role">Senior Director, Development, Electronic Arts</div>
 </div>
-<div class="test-card">
+<div class="test-slide">
 <blockquote>Kirthi Roberts is persistent in his search for the ideal candidate. He is well connected, and listens closely to the needs of the organization.</blockquote>
 <div class="author">Ginger Gibson, PhD</div>
 <div class="role">Founding Director, The Firelight Group</div>
 </div>
+<div class="test-nav"><button class="test-prev">&larr;</button><button class="test-next">&rarr;</button><div class="test-dots"></div></div>
 </div>
 
 <div class="test-section-label">From Candidates</div>
-<div class="testimonials-grid">
-<div class="test-card">
+<div class="test-slider" id="candidateSlider">
+<div class="test-slide active">
 <blockquote>I had the pleasure to interface with Kirthi on an assignment for Executive Search. Kirthi is a bright scientific scholar with strong people skills and a keen eye for talent, which is a rare combination in the Executive Search world. This creates a unique blend of depth, commitment, and professionalism that I am glad to recommend here.</blockquote>
 <div class="author">Christian Olivier, PhD, MBA</div>
-<div class="role">Vice President &amp; General Manager (formerly VP, Worldwide Sales, Alcatel &bull; GM, Broadband Division, ST Microelectronics)</div>
+<div class="role">Vice President &amp; General Manager (formerly VP, Worldwide Sales, Alcatel &bull; GM, ST Microelectronics)</div>
 </div>
-<div class="test-card">
+<div class="test-slide">
 <blockquote>Working with Kirthi was an excellent experience from the first interaction. He created a sense of honesty, professionalism and attention to detail that allowed me to understand a unique opportunity in my career path. Unlike most interactions with Executive Search professionals, Kirthi created a clear path in the transition process all the way through my joining a new team.</blockquote>
 <div class="author">Andy Kozma</div>
 <div class="role">Executive Vice President, Scope Media</div>
 </div>
-<div class="test-card">
+<div class="test-slide">
 <blockquote>Kirthi's approach to recruitment was characterized by meticulous attention to detail. His strategic guidance on how to tailor my application materials and present myself during interviews significantly contributed to my success. Throughout the process, Kirthi was a coach, mentor, and reliable source of advice. I strongly recommend Kirthi as a professional without hesitation.</blockquote>
 <div class="author">Diego Barros Delgado</div>
 <div class="role">Director of Software Quality Assurance, Circle Cardiovascular Imaging</div>
 </div>
+<div class="test-slide">
+<blockquote>Kirthi is a very rare breed in the recruiting world. The first thing that comes across is how much he wants to get to know you and your career goals. He wants to match you with a company in which you can thrive and more importantly be happy. The pre-interview process was one of the most refreshing experiences I have ever had. I did not feel like just another candidate on the roster.</blockquote>
+<div class="author">Ali Saedi</div>
+<div class="role">Sales &amp; Channel Manager, LinuxMagic</div>
+</div>
+<div class="test-nav"><button class="test-prev">&larr;</button><button class="test-next">&rarr;</button><div class="test-dots"></div></div>
 </div>
 </div></section>
 
@@ -373,23 +378,12 @@ footer{background:var(--navy-mid);padding:48px 0;border-top:1px solid rgba(255,2
 
 <!-- CONTACT -->
 <section class="s-navy-mid" id="contact"><div class="wrap">
-<div class="contact-grid">
-<div class="contact-text">
+<div class="contact-section-inner">
 <div class="section-tag">Contact</div>
 <h2>Let's <em>talk.</em></h2>
 <p>Whether you need to fill a critical engineering role, support departing employees through a transition, or invest in your technical leaders &mdash; we are here to help.</p>
-<div class="contact-details">
-<div><strong>Email:</strong> <a href="#" id="contactEmail1"></a></div>
-<div><strong>Phone:</strong> <a href="tel:+16044467215">+1 604.446.7215</a></div>
-<div><strong>Location:</strong> Vancouver, BC, Canada</div>
-</div>
-</div>
-<div class="contact-card">
-<h3>Ready to start?</h3>
-<p>Tell us what you need and we will get back to you within one business day.</p>
 <a href="#" id="contactEmailBtn" class="btn-gold">Email Us &rarr;</a>
-<div class="phone-link"><a href="tel:+16044467215">+1 604.446.7215</a></div>
-</div>
+<div class="contact-subtle">Vancouver, BC, Canada &bull; Serving clients across North America</div>
 </div>
 </div></section>
 
@@ -402,6 +396,7 @@ footer{background:var(--navy-mid);padding:48px 0;border-top:1px solid rgba(255,2
 </div></div></footer>
 
 <script>
+// Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(function(a){
   a.addEventListener('click',function(e){
     if(a.getAttribute('href')==='#') return;
@@ -410,13 +405,58 @@ document.querySelectorAll('a[href^="#"]').forEach(function(a){
     if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
   });
 });
+
 // Construct email
 var em=['contact','fiduciconsulting','com'].join('.');
 em=em.replace('contact.','contact@');
-var el1=document.getElementById('contactEmail1');
-if(el1){el1.href='mai'+'lto:'+em;el1.textContent=em;}
-var el2=document.getElementById('contactEmailBtn');
-if(el2){el2.href='mai'+'lto:'+em;}
+var emailBtn=document.getElementById('contactEmailBtn');
+if(emailBtn){emailBtn.href='mai'+'lto:'+em;}
+
+// Testimonial sliders
+function initSlider(containerId){
+  var container=document.getElementById(containerId);
+  if(!container) return;
+  var slides=container.querySelectorAll('.test-slide');
+  var dotsContainer=container.querySelector('.test-dots');
+  var prevBtn=container.querySelector('.test-prev');
+  var nextBtn=container.querySelector('.test-next');
+  var current=0;
+  var dots=[];
+
+  for(var i=0;i<slides.length;i++){
+    var dot=document.createElement('div');
+    dot.className='test-dot'+(i===0?' active':'');
+    dot.setAttribute('data-index',i);
+    dot.addEventListener('click',function(){
+      goTo(parseInt(this.getAttribute('data-index')));
+    });
+    dotsContainer.appendChild(dot);
+    dots.push(dot);
+  }
+
+  function goTo(n){
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current=n;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+  }
+
+  prevBtn.addEventListener('click',function(){
+    var next=current-1;
+    if(next<0) next=slides.length-1;
+    goTo(next);
+  });
+
+  nextBtn.addEventListener('click',function(){
+    var next=current+1;
+    if(next>=slides.length) next=0;
+    goTo(next);
+  });
+}
+
+initSlider('clientSlider');
+initSlider('candidateSlider');
 </script>
 </body>
 </html>
