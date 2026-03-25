@@ -391,7 +391,7 @@ footer{background:var(--navy-mid);padding:48px 0;border-top:1px solid rgba(255,2
 <div class="section-tag">Contact</div>
 <h2>Let's <em>talk.</em></h2>
 <p>Whether you need to fill a critical engineering role, support departing employees through a transition, or invest in your technical leaders &mdash; we are here to help.</p>
-<a href="#" id="contactEmailBtn" class="btn-gold">Email Us &rarr;</a>
+<a href="/contact.html" class="btn-gold">Get in Touch &rarr;</a>
 </div>
 </div></section>
 
@@ -414,11 +414,8 @@ document.querySelectorAll('a[href^="#"]').forEach(function(a){
   });
 });
 
-// Construct email
-var em=['contact','fiduciconsulting','com'].join('.');
-em=em.replace('contact.','contact@');
-var emailBtn=document.getElementById('contactEmailBtn');
-if(emailBtn){emailBtn.href='mai'+'lto:'+em;}
+// Construct email - no longer needed on main page
+// Email handled on contact.html
 
 // Testimonial sliders
 function initSlider(containerId){
