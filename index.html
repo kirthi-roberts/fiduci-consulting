@@ -105,16 +105,16 @@ section .lead{font-size:20px;max-width:720px;margin-bottom:56px;line-height:1.8;
 .value-card p{font-size:16px;color:var(--text);line-height:1.7}
 
 /* TESTIMONIALS */
-.test-section-label{font-size:14px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:24px;margin-top:48px}
+.test-section-label{font-size:14px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:24px;margin-top:48px;text-align:center}
 .test-section-label:first-of-type{margin-top:0}
-.test-slider{position:relative;max-width:900px}
+.test-slider{position:relative;max-width:900px;margin:0 auto}
 .test-slide{display:none;padding:48px;border-radius:18px;border:1px solid #e8e8e8;background:var(--white);position:relative;min-height:200px}
 .test-slide.active{display:block}
 .test-slide::before{content:'\201C';font-family:'DM Serif Display',serif;font-size:80px;color:rgba(212,168,83,0.15);position:absolute;top:16px;left:32px;line-height:1}
 .test-slide blockquote{font-size:18px;color:var(--text-dark);line-height:1.8;font-style:italic;margin-bottom:24px;position:relative;z-index:1}
 .test-slide .author{font-size:15px;font-weight:700;color:var(--navy)}
 .test-slide .role{font-size:14px;color:var(--text-mid);margin-top:2px}
-.test-nav{display:flex;gap:12px;margin-top:20px;align-items:center}
+.test-nav{display:flex;gap:12px;margin-top:20px;align-items:center;justify-content:center}
 .test-nav button{background:rgba(0,0,0,0.06);border:1px solid #ddd;color:var(--navy);width:44px;height:44px;border-radius:50%;cursor:pointer;font-size:20px;transition:all .2s}
 .test-nav button:hover{background:var(--gold);color:#000;border-color:var(--gold)}
 .test-dots{display:flex;gap:8px;margin-left:16px}
@@ -137,7 +137,6 @@ section .lead{font-size:20px;max-width:720px;margin-bottom:56px;line-height:1.8;
 .contact-section-inner h2 em{font-style:normal;color:var(--gold)}
 .contact-section-inner>p{font-size:18px;color:var(--text);line-height:1.8;margin-bottom:36px}
 .contact-section-inner .btn-gold{font-size:18px;padding:20px 56px}
-.contact-subtle{margin-top:28px;font-size:15px;color:rgba(200,208,220,0.45)}
 
 /* FOOTER */
 footer{background:var(--navy-mid);padding:48px 0;border-top:1px solid rgba(255,255,255,0.08)}
@@ -316,6 +315,11 @@ footer{background:var(--navy-mid);padding:48px 0;border-top:1px solid rgba(255,2
 <div class="author">Ginger Gibson, PhD</div>
 <div class="role">Founding Director, The Firelight Group</div>
 </div>
+<div class="test-slide">
+<blockquote>Kirthi has helped us to fill challenging engineering roles in our organization. His technical background enables him to identify the right technical skillset for our company. Kirthi's dedication led us to secure top talent for our most critical roles. We look forward to working with him on future projects.</blockquote>
+<div class="author">Angie Williams</div>
+<div class="role">Director, Human Resources, Invinity Energy Systems</div>
+</div>
 <div class="test-nav"><button class="test-prev">&larr;</button><button class="test-next">&rarr;</button><div class="test-dots"></div></div>
 </div>
 
@@ -337,9 +341,14 @@ footer{background:var(--navy-mid);padding:48px 0;border-top:1px solid rgba(255,2
 <div class="role">Director of Software Quality Assurance, Circle Cardiovascular Imaging</div>
 </div>
 <div class="test-slide">
-<blockquote>Kirthi is a very rare breed in the recruiting world. The first thing that comes across is how much he wants to get to know you and your career goals. He wants to match you with a company in which you can thrive and more importantly be happy. The pre-interview process was one of the most refreshing experiences I have ever had. I did not feel like just another candidate on the roster.</blockquote>
-<div class="author">Ali Saedi</div>
-<div class="role">Sales &amp; Channel Manager, LinuxMagic</div>
+<blockquote>Kirthi's support and guidance were instrumental in helping me secure my current position. His unparalleled understanding of the job market and ability to match individual aspirations with the right opportunities set him apart. He ensures a holistic understanding of his candidate's skills, experiences, and personality traits, aligning these with the right role based not just on job descriptions but on company culture and long-term career goals. His human-centric approach breathes new life into what can often feel transactional and impersonal.</blockquote>
+<div class="author">Francis Ifeanyi, MD, MBA</div>
+<div class="role">COO, Science&amp;Humans (formerly Chief Product Officer)</div>
+</div>
+<div class="test-slide">
+<blockquote>Kirthi was a pleasure to work with. With Kirthi's help, my transition from one firm to the next was efficient and smooth, and there were no surprises. His personable and open style also helped to minimize the uncertainty associated with my final decision. I would highly recommend Kirthi for connecting the right person to the right job.</blockquote>
+<div class="author">Michael C., PhD</div>
+<div class="role">Sr. Machine Learning Engineer, Workday</div>
 </div>
 <div class="test-nav"><button class="test-prev">&larr;</button><button class="test-next">&rarr;</button><div class="test-dots"></div></div>
 </div>
@@ -383,7 +392,6 @@ footer{background:var(--navy-mid);padding:48px 0;border-top:1px solid rgba(255,2
 <h2>Let's <em>talk.</em></h2>
 <p>Whether you need to fill a critical engineering role, support departing employees through a transition, or invest in your technical leaders &mdash; we are here to help.</p>
 <a href="#" id="contactEmailBtn" class="btn-gold">Email Us &rarr;</a>
-<div class="contact-subtle">Vancouver, BC, Canada &bull; Serving clients across North America</div>
 </div>
 </div></section>
 
