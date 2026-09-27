@@ -84,6 +84,7 @@ footer{padding:40px 0;border-top:1px solid rgba(255,255,255,0.08);text-align:cen
 <option value="recruitment">Engineering Recruitment</option>
 <option value="outplacement">Outplacement Support</option>
 <option value="coaching">Career & Leadership Coaching</option>
+<option value="partnerships">Canada&ndash;Asia Partnerships</option>
 <option value="other">Other</option>
 </select>
 </div>
@@ -118,12 +119,12 @@ document.getElementById('contactForm').addEventListener('submit', function(e){
   var service = data.get('service');
   var message = data.get('message');
 
-  var body = 'Name: ' + name + '%0D%0A';
-  body += 'Email: ' + email + '%0D%0A';
-  body += 'Company: ' + company + '%0D%0A';
-  body += 'Title: ' + title + '%0D%0A';
-  body += 'Service: ' + service + '%0D%0A';
-  body += 'Message: ' + message;
+  var body = 'Name: ' + encodeURIComponent(name) + '%0D%0A';
+  body += 'Email: ' + encodeURIComponent(email) + '%0D%0A';
+  body += 'Company: ' + encodeURIComponent(company) + '%0D%0A';
+  body += 'Title: ' + encodeURIComponent(title) + '%0D%0A';
+  body += 'Service: ' + encodeURIComponent(service) + '%0D%0A';
+  body += 'Message: ' + encodeURIComponent(message);
 
   var em = ['contact','fiduciconsulting','com'].join('.');
   em = em.replace('contact.','contact@');
@@ -137,6 +138,16 @@ document.getElementById('contactForm').addEventListener('submit', function(e){
     document.getElementById('successMsg').style.display = 'block';
   }, 500);
 });
+</script>
+<script>
+(function(){
+  var topics = {partnerships: 'partnerships'};
+  var t = new URLSearchParams(window.location.search).get('topic');
+  if (t && Object.prototype.hasOwnProperty.call(topics, t)) {
+    var sel = document.querySelector('#contactForm select[name="service"]');
+    if (sel) sel.value = topics[t];
+  }
+})();
 </script>
 </body>
 </html>
