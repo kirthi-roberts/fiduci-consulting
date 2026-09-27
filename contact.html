@@ -116,7 +116,8 @@ document.getElementById('contactForm').addEventListener('submit', function(e){
   var email = data.get('email');
   var company = data.get('company');
   var title = data.get('title');
-  var service = data.get('service');
+  var sel = form.querySelector('select[name="service"]');
+  var service = (sel && sel.selectedIndex >= 0 && sel.value) ? sel.options[sel.selectedIndex].text : '';
   var message = data.get('message');
 
   var body = 'Name: ' + encodeURIComponent(name) + '%0D%0A';
