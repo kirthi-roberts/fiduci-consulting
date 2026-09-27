@@ -119,12 +119,12 @@ document.getElementById('contactForm').addEventListener('submit', function(e){
   var service = data.get('service');
   var message = data.get('message');
 
-  var body = 'Name: ' + name + '%0D%0A';
-  body += 'Email: ' + email + '%0D%0A';
-  body += 'Company: ' + company + '%0D%0A';
-  body += 'Title: ' + title + '%0D%0A';
-  body += 'Service: ' + service + '%0D%0A';
-  body += 'Message: ' + message;
+  var body = 'Name: ' + encodeURIComponent(name) + '%0D%0A';
+  body += 'Email: ' + encodeURIComponent(email) + '%0D%0A';
+  body += 'Company: ' + encodeURIComponent(company) + '%0D%0A';
+  body += 'Title: ' + encodeURIComponent(title) + '%0D%0A';
+  body += 'Service: ' + encodeURIComponent(service) + '%0D%0A';
+  body += 'Message: ' + encodeURIComponent(message);
 
   var em = ['contact','fiduciconsulting','com'].join('.');
   em = em.replace('contact.','contact@');
